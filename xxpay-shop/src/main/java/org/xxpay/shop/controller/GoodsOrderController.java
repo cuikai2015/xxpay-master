@@ -124,7 +124,7 @@ public class GoodsOrderController {
         goodsOrder.setChannelId("ALIPAY_WAP");
         int ret = goodsOrderService.update(goodsOrder);
         _log.info("修改商品订单,返回:{}", ret);
-        return result+"";
+        return (String) retMap.get("payUrl");
     }
 
     private Map createPayOrder(GoodsOrder goodsOrder, Map<String, Object> params) {
