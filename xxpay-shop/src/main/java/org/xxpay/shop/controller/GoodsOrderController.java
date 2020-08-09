@@ -65,7 +65,7 @@ public class GoodsOrderController {
         goodsOrder.setGoodsOrderId(goodsOrderId);
         goodsOrder.setGoodsId(goodsId);
         goodsOrder.setGoodsName("XXPAY捐助商品G_0001");
-        goodsOrder.setAmount(1l);
+        goodsOrder.setAmount(1L);
         goodsOrder.setUserId("xxpay_000001");
         goodsOrder.setStatus(Constant.GOODS_ORDER_STATUS_INIT);
         int result = goodsOrderService.addGoodsOrder(goodsOrder);
